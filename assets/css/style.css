@@ -372,7 +372,7 @@ header {
 
 /*================ Sections ================*/
 
-@media screen and (max-width: 767px)
+@media screen and (max-width: 567px)
 {
     header {
         height: 4.8rem;
@@ -407,9 +407,9 @@ header {
 
 
 
-    /* iOS Safary support *
+    /* iOS Safary support */
     @supports (-webkit-touch-callout: none) {
-        /* CSS specific to iOS devices *
+        /* CSS specific to iOS devices */
         .chrlog {
             display: none;
         }
@@ -420,11 +420,11 @@ header {
     }
      
     @supports not (-webkit-touch-callout: none) {
-        /* CSS for other than iOS devices (Chromi hamar) *
+        /* CSS for other than iOS devices (Chromi hamar) */
         .ioslog {
             display: none;
         }
-    }*/
+    }
 
     .nav-item .logo-mobile {
         display: inline-flex; /*added*/
