@@ -77,7 +77,7 @@ body.dark-theme{
     --title-color: hsl(var(--hue-color), 8%, 95%);
     --text-color: hsl(var(--hue-color), 8%, 75%);
     --input-color: hsl(var(--hue-color), 29%, 16%);
-    --body-color: hsl(var(--hue-color), 28%, 12%);
+    --body-color: #0D1117; /*hsl(var(--hue-color), 28%, 12%);*/
     --container-color: hsl(var(--hue-color), 29%, 16%);
     --scroll-bar-color: hsl(var(--hue-color), 12%, 48%);
     --scroll-tumb-color: hsl(var(--hue-color), 12%, 36%);
@@ -90,9 +90,8 @@ body.dark-theme{
 }
 
 .change-theme{
-    font-size: 1.25rem;
-    color: var(--title-color);
-    margin-right: var(--mb-1);
+    font-size: 2rem; /*1.25rem;*/
+    color: #FFF; /*var(--title-color)*/
     cursor: pointer;
 }
 
@@ -261,53 +260,40 @@ header {
     }
 }
 
-.nav-link-mil .logo {
-    font-family: 'Krona One', sans-serif;
-    width: 1.6rem; /*?*/
-    height: 4.4rem;
-    /*text-transform: uppercase;*/
-    white-space: nowrap;
-    text-decoration: none;
-    font-weight: 900;
-    /*background: url("https://Mil-House.github.io/Mil-House/img/apple.svg") center no-repeat;*/
-    font-size: 1.6em;
-    transition: 0.4s;
-}
-
 .mil-link .logo {
+    display: inline-flex; /*added*/
     font-family: 'Krona One', sans-serif;
-    width: 1.6rem; /*?*/
-    height: 4.4rem;
-    /*text-transform: uppercase;*/
     white-space: nowrap;
+    color: #cacaca;
     text-decoration: none;
     font-weight: 900;
     /*background: url("https://Mil-House.github.io/Mil-House/img/apple.svg") center no-repeat;*/
     font-size: 1.6em;
+    align-items: center;
+    column-gap: .25rem;
     transition: 0.4s;
 }
 
-.logo {
-    color: #111;
+.pkgic{
+    padding-bottom: 4px;
+    font-size: 1.1em;
+}
 
-    background: #00c3ff;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #c60feb, #ffff1c, #00c3ff);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #c60feb, #ffff1c, #00c3ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+/*.logo {
+    *background: #00c3ff;  * fallback for old browsers *
+    background: -webkit-linear-gradient(to right, #c60feb, #ffff1c, #00c3ff);  * Chrome 10-25, Safari 5.1-6 *
+    background: linear-gradient(to right, #c60feb, #ffff1c, #00c3ff); * W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ * 
 
     background-clip: text;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;*
 
-    /*text-shadow: 0 0 55px #FFFFFF;*/
-}
+    *text-shadow: 0 0 55px #FFFFFF;*
+}*/
 
 /*.nav-link-mil .logo .fa-home {
     font-size: 2.7rem;
 }*/
-
-.decor {
-    padding-right: 1px;
-}
 
 /* Cool Line Effect (start) */
 .logo:hover::after {
@@ -323,7 +309,7 @@ header {
     right: 0;
     position: absolute;
     background: linear-gradient(to right, #ffff1c, #c60feb, #00c3ff 100%);
-    transition: width .5s ease 0s, right .5s ease 0s;
+    transition: width 1.5s ease 0s, right .5s ease 0s;
     width: 0;
 }
 /* Cool Line Effect (end) */
@@ -331,6 +317,7 @@ header {
 .nav-link-lang {
     width: 1.6rem;
     height: 4.4rem;
+    margin-right: 4px;
     /*background: url("https://Mil-House.github.io/Mil-House/img/search.svg") center no-repeat;*/
     background: url("https://Mil-House.github.io/Mil-House/img/translate2.png") center no-repeat;
     cursor: pointer;
@@ -407,7 +394,7 @@ header {
 
     .nav-list-mobile {
         display: flex;
-        padding: 2px 1rem;   /* added from me */
+        padding: 0px 1rem;   /* added from me */
     }
 
     .nav-item {
@@ -420,9 +407,9 @@ header {
 
 
 
-    /* iOS Safary support */
+    /* iOS Safary support *
     @supports (-webkit-touch-callout: none) {
-        /* CSS specific to iOS devices */
+        /* CSS specific to iOS devices *
         .chrlog {
             display: none;
         }
@@ -433,18 +420,22 @@ header {
     }
      
     @supports not (-webkit-touch-callout: none) {
-        /* CSS for other than iOS devices (Chromi hamar) */
+        /* CSS for other than iOS devices (Chromi hamar) *
         .ioslog {
             display: none;
         }
-    }
+    }*/
 
     .nav-item .logo-mobile {
+        display: inline-flex; /*added*/
         font-family: 'Krona One', sans-serif;
-        /*font-family: 'Poppins', sans-serif;*/
         white-space: nowrap;
         text-decoration: none;
         font-weight: 800;
+        font-size: 1.3em;
+        align-items: center;
+        column-gap: .25rem;
+        
         /*
         font-weight: 500; 800
         font-size: 1em; 1.6em
@@ -477,10 +468,10 @@ header {
     }
     
 
-    .nav-item .logo-mobile .fa-home {
-        font-size: 1.9rem; /*2.9rem  for Logo 1*/
+    /*.nav-item .logo-mobile .fa-home {
+        font-size: 1.9rem; /*2.9rem  for Logo 1*
         font-weight: 500;
-    }
+    }*/
 
     .nav-item-hidden {
         display: none;

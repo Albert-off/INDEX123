@@ -12,6 +12,7 @@
 
     <!--==================== UNICONS ====================-->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/res/all.min.css">-->
 
     <!--==================== SWIPER CSS ====================
@@ -43,9 +44,9 @@
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a href="index.html" class="nav-link nav-link-mil"><span class="logo-mobile">
-                                <span class="chrlog">⟨︎INDE<i class="fa fa-home" aria-hidden="true"></i>X⟩︎</span>
-                                <span class="ioslog">⟨︎INDEX⟩︎</span></span></a> <!-- mil -> apple -->
+                            <a href="index.html" class="nav-link nav-link-mil">
+                                <span class="logo-mobile"><div class="pkgic">⟨︎</div>INDEX<div class="pkgic">⟩︎</div></span>
+                            </a> <!-- INDEX -> apple -->
                         </li>
     
                         <!--==== Mini bag Menu ====-->
@@ -74,10 +75,8 @@
                     <ul class="nav-list nav-list-larger">
                         <li class="nav-item nav-item-hidden">
                             <a href="#home" class="mil-link nav-link-mil">
-                                <span class="logo">
-                                    <span class="decor">⟨︎</span>INDEX<span class="decor">⟩︎</span>
-                                </span>
-                            </a> <!-- mil -> apple --> 
+                                <div class="logo"><div class="pkgic">⟨︎</div>INDEX<div class="pkgic">⟩︎</div></div>
+                            </a> <!-- ⟨︎INDEX⟩︎ -> apple --> 
                         </li>
                         <li class="nav-item effect-one smlink"><a href="#home" class="nav-link mobileitem" onclick="mobilemenucloseToggle()">Home</a></li>
                         <li class="nav-item effect-one smlink"><a href="#about" class="nav-link mobileitem" onclick="mobilemenucloseToggle()">About</a></li>
@@ -104,6 +103,14 @@
                         </li>
     
                         <li class="nullpool"></li> <!-- Datark taracutyun scrolli hamar -->
+
+                        <!--==== Change Theme ====-->
+                        <li class="nav-item nav-item-hidden">
+                            <div class="nav__btns">
+                                <!-- Theme change buttons -->
+                                <i class="uil uil-moon change-theme" id="theme-button"></i>
+                            </div>
+                        </li>
     
                         <!--==== Bag Menu ====-->
     
