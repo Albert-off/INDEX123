@@ -434,27 +434,6 @@ header {
         justify-content: center;
     }
 
-
-
-    /* iOS Safary support */
-    @supports (-webkit-touch-callout: none) {
-        /* CSS specific to iOS devices */
-        .chrlog {
-            display: none;
-        }
-        
-        .phnum a {
-            color: #3363ff;
-        }
-    }
-     
-    @supports not (-webkit-touch-callout: none) {
-        /* CSS for other than iOS devices (Chromi hamar) */
-        .ioslog {
-            display: none;
-        }
-    }
-
     .nav-item .logo-mobile {
         font-family: 'Krona One', sans-serif;
         /*font-family: 'Poppins', sans-serif;*/
