@@ -372,7 +372,7 @@ header {
 
 /*================ Sections ================*/
 
-@media screen and (max-width: 567px)
+@media screen and (max-width: 767px)
 {
     header {
         height: 4.8rem;
@@ -432,7 +432,6 @@ header {
         white-space: nowrap;
         text-decoration: none;
         font-weight: 800;
-        font-size: 1.3em;
         align-items: center;
         column-gap: .25rem;
         
