@@ -435,6 +435,7 @@ header {
     }
 
     .nav-item .logo-mobile {
+        display: inline-flex; /*added*/
         font-family: 'Krona One', sans-serif;
         /*font-family: 'Poppins', sans-serif;*/
         white-space: nowrap;
